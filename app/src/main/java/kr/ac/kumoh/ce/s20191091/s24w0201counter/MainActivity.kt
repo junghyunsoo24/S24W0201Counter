@@ -19,22 +19,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(main.root)
         //setContentView(R.layout.activity_main)
 
-        main.btnAdd.setOnClickListener {
-            main.txtCount.text = "증가버튼입니다"
-            main.txtCount.text = "${++count}"
-            //main.txtCount.text = "" + ++count //연산자 오버로딩으로 count도 string으로바뀜
-            //main.txtCount.text = (++count).toString()
-        }
-        main.btnSub.setOnClickListener {
-            main.txtCount.text = "감소버튼입니다."
-            if(count > 0) {
-                main.txtCount.text = "${--count}"
-            }
-        }
-        main.btnReset.setOnClickListener {
-            count = 0;
-            main.txtCount.text = "$count"
-        }
+//        main.btnAdd.setOnClickListener {
+//            main.txtCount.text = "증가버튼입니다"
+//            main.txtCount.text = "${++count}"
+//            //main.txtCount.text = "" + ++count //연산자 오버로딩으로 count도 string으로바뀜
+//            //main.txtCount.text = (++count).toString()
+//        }
+//        main.btnSub.setOnClickListener {
+//            main.txtCount.text = "감소버튼입니다."
+//            if(count > 0) {
+//                main.txtCount.text = "${--count}"
+//            }
+//        }
+//        main.btnReset.setOnClickListener {
+//            count = 0;
+//            main.txtCount.text = "$count"
+//        }
         enableEdgeToEdge()//최근에 나온 핸드폰이 전면 화면이라 그걸 이용하기 위해 사용
 
     }
